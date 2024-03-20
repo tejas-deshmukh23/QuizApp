@@ -18,5 +18,16 @@ public class QuestionService {
 	{
 		return repo.findAll();
 	}
+
+	public List<Question> getQuestionByCategory(String category) {
+		// TODO Auto-generated method stub
+		return repo.findByCategory(category);
+	}
+
+	public Question addQuestion(Question question) {
+		// TODO Auto-generated method stub
+		return repo.save(question);
+		
+	}
 	
 }

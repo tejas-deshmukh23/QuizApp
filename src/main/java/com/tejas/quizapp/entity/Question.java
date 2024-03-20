@@ -18,7 +18,7 @@ public class Question {
 	@Column(name="questiontitle")
 	private String questionTitle;
 	@Column(name="category")
-	private String Category;
+	private String category;
 	@Column(name="option1")
 	private String option1;
 	@Column(name="option2")
@@ -41,7 +41,7 @@ public class Question {
 		super();
 		this.id = id;
 		this.questionTitle = questionType;
-		Category = category;
+		category = category;
 		this.difficultyLevel = difficultyLevel;
 		this.option1 = option1;
 		this.option2 = option2;
@@ -66,11 +66,11 @@ public class Question {
 	}
 
 	public String getCategory() {
-		return Category;
+		return category;
 	}
 
 	public void setCategory(String category) {
-		Category = category;
+		category = category;
 	}
 
 	public String getDifficultyLevel() {
@@ -111,6 +111,22 @@ public class Question {
 
 	public void setOption4(String option4) {
 		this.option4 = option4;
+	}
+
+	public String getQuestionTitle() {
+		return questionTitle;
+	}
+
+	public void setQuestionTitle(String questionTitle) {
+		this.questionTitle = questionTitle;
+	}
+
+	public String getRightAnswer() {
+		return rightAnswer;
+	}
+
+	public void setRightAnswer(String rightAnswer) {
+		this.rightAnswer = rightAnswer;
 	}  
 
 }
